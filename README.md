@@ -1,23 +1,48 @@
-# Data Structures and Algorithms
+# Data Structures and Algorithms 
 
-See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-code-challenges), in the Code 301 Setup Guide.
 
-## Repository Quick Tour and Usage
 
-### 301 Code Challenges
+*Whiteboard Challenges for Code Fellows seattle401d24*
 
-Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`
+### Table of contents
 
-Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
+  * [Array Data Structure Modules](#array-data-structure-modules)
+    * [Challenge 1 Reverse Array](#reverse-array)
+    * [Challenge 2 - Insert and Shift Array](#insert-shift-array)
+    
 
-If you have not already done so, run `npm install` from within this folder to setup your system to be able to run tests using `Jest`
 
-To run your tests
+Array Data Structure Modules
+=====================
 
-- Change to the `javascript` folder
-- run `npm test` to run all of the tests
-- run `npm test ##` to only run tests for challenge ## (i.e. 01)
+<a id="reverse-array"></a>
 
-### 401 Data Structures, Code Challenges
+### Challenege 1 - Reverse Array 
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+#### Challenge
+Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return the provided array argument with elements in reversed order.
+
+#### Solution
+*[Solution](.\c-sharp\DataStructures\CodeChallenges\Code.Challenges1.cs)*
+
+<img src="./assets/codech1.jpg" style="width: 350px;">
+
+*[Unit Test codecha-1](.\c-sharp\DataStructures\CodeChallengesTests\CodeChallenge-1-Tests.cs)*
+
+
+<a id="insert-shift-array"></a>
+
+### Challenege 2 - Insert and Shift Array
+
+#### Challenge
+Write a function called ```insertShiftArray``` which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
+
+#### Solution
+*[Solution](https://github.com/justeban/data-structures-and-algorithms/blob/array_shift/array_shift.js/#L1)*
+
+<img src="./assets/array_shift1.jpg" style="width: 350px; text-align: center;">
+<img src="./assets/array_shift2.jpg" style="width: 350px; text-align: center;">
+
+<a id="binary-search"></a>
+
