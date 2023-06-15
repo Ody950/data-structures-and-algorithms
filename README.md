@@ -11,7 +11,6 @@
     * [Challenge 2 - Insert and Shift Array](#insert-shift-array)
     
 
-
 Array Data Structure Modules
 =====================
 
