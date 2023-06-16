@@ -3,9 +3,9 @@ using System;
 using System.Reflection;
 
 
-namespace Challenge1
+namespace Challenge2
 {
-  public class Whiteboard
+  public class Whiteboard2
   {
 
 

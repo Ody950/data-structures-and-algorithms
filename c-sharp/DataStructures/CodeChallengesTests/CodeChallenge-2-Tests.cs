@@ -1,11 +1,11 @@
 
 
-using Challenge1;
+using Challenge2;
 using System.Security.Principal;
 using Xunit;
 namespace TestShiftt
 {
-  public class UnitTest1
+  public class UnitTest2
   {
     [Theory]
     [InlineData(new int[] { }, 5, new int[] { 5 })]
@@ -16,7 +16,7 @@ namespace TestShiftt
 
     public void TestShift(int[] arr, int integerX, int[] expectedarr)
     {
-      Assert.Equal(expectedarr, Whiteboard.ShiftArr(arr, integerX));
+      Assert.Equal(expectedarr, Whiteboard2.ShiftArr(arr, integerX));
 
     }
   }
