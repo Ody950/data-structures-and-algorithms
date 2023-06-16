@@ -23,11 +23,11 @@ Array Data Structure Modules
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return the provided array argument with elements in reversed order.
 
 #### Solution
-*[Solution](.\c-sharp\DataStructures\CodeChallenges\Code.Challenges1.cs)*
+*[Solution](https://github.com/Ody950/data-structures-and-algorithms/blob/main/c-sharp/DataStructures/CodeChallenges/Code.Challenges1.cs)*
 
 <img src="./assets/codech1.jpg" style="width: 500px;">
 
-*[Unit Test codecha-1](.\c-sharp\DataStructures\CodeChallengesTests\CodeChallenge-1-Tests.cs)*
+*[Unit Test codecha-1](https://github.com/Ody950/data-structures-and-algorithms/blob/main/c-sharp/DataStructures/CodeChallengesTests/CodeChallenge-1-Tests.cs)*
 
 
 <a id="insert-shift-array"></a>
@@ -38,9 +38,9 @@ Write a function called reverseArray which takes an array as an argument. Withou
 Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
 #### Solution
-*[Solution](.\c-sharp\DataStructures\CodeChallenges\Code.Challenges2.cs)*
+*[Solution](https://github.com/Ody950/data-structures-and-algorithms/blob/main/c-sharp/DataStructures/CodeChallenges/Code.Challenges2.cs)*
 
 <img src="./assets/shift-ch2.jpg" style="width: 500px;">
 
-*[Unit Test codecha-2](.\c-sharp\DataStructures\CodeChallengesTests\CodeChallenge-2-Tests.cs)*
+*[Unit Test codecha-2](https://github.com/Ody950/data-structures-and-algorithms/blob/main/c-sharp/DataStructures/CodeChallengesTests/CodeChallenge-2-Tests.cs)*
 
