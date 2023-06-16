@@ -17,7 +17,5 @@ namespace testrevers
       Assert.Equal(expectedarr, Whiteboard.Reverse(arr));
     }
 
-
-
   }
 }
