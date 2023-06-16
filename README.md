@@ -25,7 +25,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 #### Solution
 *[Solution](.\c-sharp\DataStructures\CodeChallenges\Code.Challenges1.cs)*
 
-<img src="./assets/codech1.jpg" style="width: 350px;">
+<img src="./assets/codech1.jpg" style="width: 500px;">
 
 *[Unit Test codecha-1](.\c-sharp\DataStructures\CodeChallengesTests\CodeChallenge-1-Tests.cs)*
 
@@ -35,13 +35,12 @@ Write a function called reverseArray which takes an array as an argument. Withou
 ### Challenege 2 - Insert and Shift Array
 
 #### Challenge
-Write a function called ```insertShiftArray``` which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
+Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
 #### Solution
-*[Solution](https://github.com/justeban/data-structures-and-algorithms/blob/array_shift/array_shift.js/#L1)*
+*[Solution](.\c-sharp\DataStructures\CodeChallenges\Code.Challenges2.cs)*
 
-<img src="./assets/array_shift1.jpg" style="width: 350px; text-align: center;">
-<img src="./assets/array_shift2.jpg" style="width: 350px; text-align: center;">
+<img src="./assets/shift-ch2.jpg" style="width: 500px;">
 
-<a id="binary-search"></a>
+*[Unit Test codecha-2](.\c-sharp\DataStructures\CodeChallengesTests\CodeChallenge-2-Tests.cs)*
 
