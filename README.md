@@ -9,6 +9,7 @@
   * [Array Data Structure Modules](#array-data-structure-modules)
     * [Challenge 1 Reverse Array](#reverse-array)
     * [Challenge 2 - Insert and Shift Array](#insert-shift-array)
+    * [Challenge 3 - BinarySearch](#BinarySearch)
     
 
 Array Data Structure Modules
@@ -43,4 +44,19 @@ Write a function called insertShiftArray which takes in an array and a value to 
 <img src="./assets/shift-ch2.jpg" style="width: 500px;">
 
 *[Unit Test codecha-2](https://github.com/Ody950/data-structures-and-algorithms/blob/main/c-sharp/DataStructures/CodeChallengesTests/CodeChallenge-2-Tests.cs)*
+
+
+<a id="BinarySearch"></a>
+
+### Challenege 3 - Binary Search
+#### Challenge
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the value of the search key, or -1 if the element is not in the array.
+#### Solution
+*[Solution](https://github.com/Ody950/data-structures-and-algorithms/blob/main/c-sharp/DataStructures/CodeChallenges/Code.Challenges3.cs)*
+
+<img src="./assets/ch3.jpg" style="width: 500px;">
+
+*[Unit Test codecha-2](https://github.com/Ody950/data-structures-and-algorithms/blob/main/c-sharp/DataStructures/CodeChallengesTests/CodeChallenge-3-Tests.cs)*
+
+
 
