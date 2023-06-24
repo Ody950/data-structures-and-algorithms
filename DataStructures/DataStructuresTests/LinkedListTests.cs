@@ -39,6 +39,7 @@ namespace SinglyLinkedListTest
       list.Add(10);
       list.Add(15);
       list.Add(20);
+
       list.InsertBefore(15, 13);
       Assert.Equal("Head -> [5] -> [10] -> [13] -> [15] -> [20] -> NULL", list.ToString());
     }
