@@ -55,8 +55,6 @@ namespace SinglyLinkedLists
     public Node Current { get; set; }
 
 
-
-
     public void Append(int value)
     {
       Node newNode = new Node(value);

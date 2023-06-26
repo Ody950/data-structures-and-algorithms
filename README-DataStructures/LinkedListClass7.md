@@ -7,7 +7,7 @@
 #### ***Description***
 This program creates a Linked List, and then allows you to interact with it, by performing basic operations on it, such as adding a new node based on the position or on the data that the node contains, whether before or after a specific node, as well as searching for specific data within the Linked List as well as printing the entire Linked List.
 #### Solution
-*[Solution-Linked List insertions](https://github.com/Ody950/data-structures-and-algorithms/blob/main/DataStructures/DataStructures/LinkedList.cs)*
+*[Solution-Linked List insertions](https://github.com/Ody950/data-structures-and-algorithms/blob/main/DataStructures/DataStructures/LinkedListInsertions.cs)*
 
 ## LinkedList Challenge Summary
 
@@ -38,7 +38,7 @@ This program creates a Linked List, and then allows you to interact with it, by 
 ### InsertAfter method
 <img src="./assets2/InsertA.jpg" style="width: 500px;">
 
-*[Unit Test-Linked List insertions](https://github.com/Ody950/data-structures-and-algorithms/blob/main/DataStructures/DataStructuresTests/LinkedListTests.cs)*
+*[Unit Test-Linked List insertions](https://github.com/Ody950/data-structures-and-algorithms/blob/main/DataStructures/DataStructuresTests/LinkedListInsertionsTest.cs)*
 
 
 
