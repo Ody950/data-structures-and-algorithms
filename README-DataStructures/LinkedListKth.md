@@ -5,7 +5,7 @@
 #### ***Description***
 Write a method for the Linked List class which takes a number (k), as a parameter. Return the node that is k from the end of the linked list.
 #### Solution
-*[Solution-Linked List insertions](https://github.com/Ody950/data-structures-and-algorithms/blob/main/DataStructures/DataStructures/LinkedListKth.cs)*
+*[Solution-Linked List kth FromEnd](https://github.com/Ody950/data-structures-and-algorithms/blob/main/DataStructures/DataStructures/LinkedListKth.cs)*
 
 ## LinkedList Challenge Summary
 
@@ -40,5 +40,5 @@ Write a method for the Linked List class which takes a number (k), as a paramete
 ### kth FromEnd method
 <img src="./assets2/InsertC.jpg" style="width: 500px;">
 
-*[Unit Test-Linked List insertions](https://github.com/Ody950/data-structures-and-algorithms/blob/main/DataStructures/DataStructuresTests/LinkedListKthTest.cs)*
+*[Unit Test-Linked List kth FromEnd](https://github.com/Ody950/data-structures-and-algorithms/blob/main/DataStructures/DataStructuresTests/LinkedListKthTest.cs)*
 
