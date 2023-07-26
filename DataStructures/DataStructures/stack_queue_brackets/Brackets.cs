@@ -17,7 +17,6 @@ namespace stackQueueBrackets
       if (TheString == null)
         return true;
 
-
       for (int i = 0; i < TheString.Length; i++)
       {
         char temp = TheString[i];
