@@ -21,5 +21,6 @@
 | DataStructures 6 - Stack Queue Pseudo: Class 11 | [DataStructures 6 - Stack Queue Pseudo](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/stack_queue_pseudo.md) |
 | DataStructures 7 - Animal Shelter: Class 12 | [DataStructures 7 - Animal Shelter](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/stack-queue-animal-shelter.md) |
 | DataStructures 8 - Stack Queue Brackets: Class 13 | [DataStructures 8 - Stack Queue Brackets](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/stack_queue_brackets.md) |
-| DataStructures 9 - Duck Duck Goose: Class 13 | [DataStructures 9 - Duck Duck Goose](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/DuckDuckGoose.md) |
-| DataStructures 10 - Trees: Class 10 | [DataStructures 10 - Trees](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Trees.md) |
+| DataStructures 9 - Duck Duck Goose: Class 14 | [DataStructures 9 - Duck Duck Goose](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/DuckDuckGoose.md) |
+| DataStructures 10 - Trees: Class 15 | [DataStructures 10 - Trees](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Trees.md) |
+| DataStructures 11 - Trees: Class 16 | [DataStructures 11 - Tree Max](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/treeMax.md) |
