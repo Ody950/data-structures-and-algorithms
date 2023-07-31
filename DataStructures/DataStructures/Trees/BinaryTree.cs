@@ -96,5 +96,28 @@ namespace trees
       TheList.Add(root.Value);
       return TheList.ToArray();
     }
+
+
+    public int TheMax(BinaryTree tree)
+    {
+
+      if (tree.root.Value == null)
+      {
+        return 0;
+      }
+
+      int[] treeValues = preOrder(tree.root);
+
+      int max = treeValues[0];
+      foreach (int x in treeValues)
+      {
+        if (x > max)
+          max = x;
+      }
+
+      return max;
+    }
+
+
   }
 }
