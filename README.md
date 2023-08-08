@@ -25,3 +25,4 @@
 | DataStructures 10 - Trees: Class 15 | [DataStructures 10 - Trees](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Trees.md) |
 | DataStructures 11 - Trees: Class 16 | [DataStructures 11 - Tree Max](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/treeMax.md) |
 | DataStructures 12 - Tree breadth first: Class 17 | [DataStructures 12 - Tree breadth first](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/BreadthFirst.md) |
+| DataStructures 13 - Fizz Buzz Tree : Class 18 | [DataStructures 13 - Fizz Buzz Tree](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/FizzBuzzTree.md) |
