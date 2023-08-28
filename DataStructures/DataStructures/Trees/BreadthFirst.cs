@@ -18,8 +18,11 @@ namespace trees
       }
 
       Node current = Tree.root;
+
       Queue<Node> NewQueue = new Queue<Node>();
+
       List<int> NewList = new List<int>();
+
       NewQueue.Enqueue(current);
 
       while (NewQueue.Count > 0)
