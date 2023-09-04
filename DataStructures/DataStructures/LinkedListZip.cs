@@ -309,49 +309,42 @@ namespace SinglyLinkedLists
 
 
     
-    public bool IsPalindrome(ListNode head)
+    public class LinkedListPalindrome
+{
+    public static bool IsPalindrome(ListNode head)
     {
         if (head == null || head.Next == null)
             return true;
 
-        // Step 1: Find the middle of the linked list using slow and fast pointers
+        Stack<int> stack = new Stack<int>();
         ListNode slow = head;
         ListNode fast = head;
 
+        // Push half of the elements onto the stack
         while (fast != null && fast.Next != null)
         {
+            stack.Push(slow.Value);
             slow = slow.Next;
             fast = fast.Next.Next;
         }
 
-        // Step 2: Reverse the first half of the linked list
-        ListNode prev = null;
-        ListNode current = head;
-
-        while (current != slow)
+        // If the linked list has an odd number of elements, skip the middle one
+        if (fast != null)
         {
-            ListNode nextNode = current.Next;
-            current.Next = prev;
-            prev = current;
-            current = nextNode;
+            slow = slow.Next;
         }
 
-        // If the list has an odd number of elements, skip the middle node
-        if (fast != null)
-            slow = slow.Next;
-
-        // Step 3: Compare the reversed first half with the second half
-        while (prev != null)
+        // Compare the second half of the linked list with the elements in the stack
+        while (slow != null)
         {
-            if (prev.Val != slow.Val)
+            if (slow.Value != stack.Pop())
                 return false;
-            prev = prev.Next;
+
             slow = slow.Next;
         }
 
         return true;
     }
-
 
 
   }
