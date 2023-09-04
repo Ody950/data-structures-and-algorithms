@@ -309,43 +309,61 @@ namespace SinglyLinkedLists
 
 
     
-    public class LinkedListPalindrome
+   public static bool IsPalindrome(ListNode head)
 {
-    public static bool IsPalindrome(ListNode head)
-    {
-        if (head == null || head.Next == null)
-            return true;
-
-        Stack<int> stack = new Stack<int>();
-        ListNode slow = head;
-        ListNode fast = head;
-
-        // Push half of the elements onto the stack
-        while (fast != null && fast.Next != null)
-        {
-            stack.Push(slow.Value);
-            slow = slow.Next;
-            fast = fast.Next.Next;
-        }
-
-        // If the linked list has an odd number of elements, skip the middle one
-        if (fast != null)
-        {
-            slow = slow.Next;
-        }
-
-        // Compare the second half of the linked list with the elements in the stack
-        while (slow != null)
-        {
-            if (slow.Value != stack.Pop())
-                return false;
-
-            slow = slow.Next;
-        }
-
+    // Check if the linked list is empty or has only one element
+    if (head == null || head.Next == null)
         return true;
+
+    // Step 1: Find the middle of the linked list
+    ListNode slow = head; // Initialize a slow pointer to the head
+    ListNode fast = head; // Initialize a fast pointer to the head
+
+    while (fast != null && fast.Next != null)
+    {
+        slow = slow.Next; // Move the slow pointer one step
+        fast = fast.Next.Next; // Move the fast pointer two steps
     }
 
+    // At the end of this loop, 'slow' points to the middle of the linked list
+
+    // Step 2: Reverse the second half of the linked list
+    ListNode reversedSecondHalf = ReverseLinkedList(slow);
+
+    // Step 3: Compare the first half with the reversed second half
+    ListNode firstHalf = head; // Initialize a pointer to the head
+
+    while (reversedSecondHalf != null)
+    {
+        if (firstHalf.Value != reversedSecondHalf.Value)
+            return false; // If values do not match, it's not a palindrome
+
+        firstHalf = firstHalf.Next; // Move the pointer in the first half
+        reversedSecondHalf = reversedSecondHalf.Next; // Move the pointer in the reversed second half
+    }
+
+    // If the loop completes without returning false, it's a palindrome
+    return true;
+}
+
+// Helper function to reverse a linked list
+private static ListNode ReverseLinkedList(ListNode head)
+{
+    ListNode prev = null; // Initialize a 'prev' pointer to null
+    ListNode current = head; // Start with the head of the linked list
+    ListNode next;
+
+    while (current != null)
+    {
+        next = current.Next; // Save the next node
+        current.Next = prev; // Reverse the pointer direction
+        prev = current; // Move 'prev' to the current node
+        current = next; // Move 'current' to the next node
+    }
+
+    // At the end of this loop, 'prev' points to the new head of the reversed linked list
+    return prev;
+}
 
   }
 }
