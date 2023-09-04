@@ -309,15 +309,15 @@ namespace SinglyLinkedLists
 
 
     
-   public static bool IsPalindrome(ListNode head)
+   public static bool IsPalindrome(Node head)
 {
     // Check if the linked list is empty or has only one element
     if (head == null || head.Next == null)
         return true;
 
     // Step 1: Find the middle of the linked list
-    ListNode slow = head; // Initialize a slow pointer to the head
-    ListNode fast = head; // Initialize a fast pointer to the head
+    Node slow = head; // Initialize a slow pointer to the head
+    Node fast = head; // Initialize a fast pointer to the head
 
     while (fast != null && fast.Next != null)
     {
@@ -328,10 +328,10 @@ namespace SinglyLinkedLists
     // At the end of this loop, 'slow' points to the middle of the linked list
 
     // Step 2: Reverse the second half of the linked list
-    ListNode reversedSecondHalf = ReverseLinkedList(slow);
+    Node reversedSecondHalf = ReverseLinkedList(slow);
 
     // Step 3: Compare the first half with the reversed second half
-    ListNode firstHalf = head; // Initialize a pointer to the head
+    Node firstHalf = head; // Initialize a pointer to the head
 
     while (reversedSecondHalf != null)
     {
@@ -347,11 +347,11 @@ namespace SinglyLinkedLists
 }
 
 // Helper function to reverse a linked list
-private static ListNode ReverseLinkedList(ListNode head)
+private static Node ReverseLinkedList(Node head)
 {
-    ListNode prev = null; // Initialize a 'prev' pointer to null
-    ListNode current = head; // Start with the head of the linked list
-    ListNode next;
+    Node prev = null; // Initialize a 'prev' pointer to null
+    Node current = head; // Start with the head of the linked list
+    Node next;
 
     while (current != null)
     {
