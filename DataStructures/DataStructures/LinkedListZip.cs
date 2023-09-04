@@ -309,64 +309,67 @@ namespace SinglyLinkedLists
 
 
     
-   public static bool IsPalindrome(Node head)
+  public static bool IsPalindrome(Node head)
 {
-    // Check if the linked list is empty or has only one element
     if (head == null || head.Next == null)
         return true;
 
     // Step 1: Find the middle of the linked list
-    Node slow = head; // Initialize a slow pointer to the head
-    Node fast = head; // Initialize a fast pointer to the head
+    Node slow = head;
+    Node fast = head;
+    Node prevSlow = null;
 
     while (fast != null && fast.Next != null)
     {
-        slow = slow.Next; // Move the slow pointer one step
-        fast = fast.Next.Next; // Move the fast pointer two steps
+        prevSlow = slow; // Keep track of the previous slow pointer
+        slow = slow.Next;
+        fast = fast.Next.Next;
     }
 
-    // At the end of this loop, 'slow' points to the middle of the linked list
+    // If 'fast' is not null, it means the list has an odd number of elements, so skip the middle node
+    if (fast != null)
+    {
+        prevSlow.Next = slow.Next; // Skip the middle node
+        slow = prevSlow.Next; // Move slow pointer to the new middle
+    }
 
     // Step 2: Reverse the second half of the linked list
     Node reversedSecondHalf = ReverseLinkedList(slow);
 
     // Step 3: Compare the first half with the reversed second half
-    Node firstHalf = head; // Initialize a pointer to the head
-
+    Node firstHalf = head;
     while (reversedSecondHalf != null)
     {
         if (firstHalf.Value != reversedSecondHalf.Value)
-            return false; // If values do not match, it's not a palindrome
+            return false;
 
-        firstHalf = firstHalf.Next; // Move the pointer in the first half
-        reversedSecondHalf = reversedSecondHalf.Next; // Move the pointer in the reversed second half
+        firstHalf = firstHalf.Next;
+        reversedSecondHalf = reversedSecondHalf.Next;
     }
 
-    // If the loop completes without returning false, it's a palindrome
     return true;
 }
 
 // Helper function to reverse a linked list
 private static Node ReverseLinkedList(Node head)
 {
-    Node prev = null; // Initialize a 'prev' pointer to null
-    Node current = head; // Start with the head of the linked list
+    Node prev = null;
+    Node current = head;
     Node next;
 
     while (current != null)
     {
-        next = current.Next; // Save the next node
-        current.Next = prev; // Reverse the pointer direction
-        prev = current; // Move 'prev' to the current node
-        current = next; // Move 'current' to the next node
+        next = current.Next;
+        current.Next = prev;
+        prev = current;
+        current = next;
     }
 
-    // At the end of this loop, 'prev' points to the new head of the reversed linked list
     return prev;
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-    Let's walk through how the code works for the linked list ({t}->{a}->{c}->{o}->{c}->{a}->{t}):
+    Certainly, let's walk through how the modified code works for the linked list ({t}->{a}->{c}->{o}->{c}->{a}->{t}):
 
 1. **Initialize the linked list**: You have a linked list with the following nodes: "t" -> "a" -> "c" -> "o" -> "c" -> "a" -> "t".
 
@@ -378,11 +381,17 @@ private static Node ReverseLinkedList(Node head)
 
    - After a few iterations, `slow` and `fast` will meet at the middle node "o". The `while` loop stops.
 
-3. **Step 2: Reverse the second half of the linked list**:
+   - Because the list has an odd number of elements, we also keep track of the `prevSlow` pointer, which points to the node just before the middle node.
 
-   - Call the `ReverseLinkedList` function with the middle node "o". The reversed second half becomes: "c" -> "a" -> "t".
+3. **Skip the middle node (since the list is odd)**:
 
-4. **Step 3: Compare the first half with the reversed second half**:
+   - We skip the middle node "o" by updating the `prevSlow.Next` pointer to point to the node after the middle node. This effectively removes the middle node from the list. The list becomes: "t" -> "a" -> "c" -> "c" -> "a" -> "t".
+
+4. **Step 2: Reverse the second half of the linked list**:
+
+   - Call the `ReverseLinkedList` function with the new middle node "c". The reversed second half becomes: "t" -> "a" -> "c".
+
+5. **Step 3: Compare the first half with the reversed second half**:
 
    - Initialize `firstHalf` pointer to the head, which is "t".
 
@@ -393,9 +402,10 @@ private static Node ReverseLinkedList(Node head)
      - "t" (firstHalf) == "t" (reversedSecondHalf) - They match.
      - "a" (firstHalf) == "a" (reversedSecondHalf) - They match.
      - "c" (firstHalf) == "c" (reversedSecondHalf) - They match.
-     - "o" (firstHalf) == "t" (reversedSecondHalf) - They do not match, so the function returns `false`.
 
-Since there's a mismatch, the function returns `false`, indicating that the input linked list ({t}->{a}->{c}->{o}->{c}->{a}->{t}) is not a palindrome.
+6. **Return `true`**: Since all values in the first half match the values in the reversed second half, the function returns `true`.
+
+So, the function correctly identifies that the input linked list ({t}->{a}->{c}->{o}->{c}->{a}->{t}) is a palindrome and returns `true`.
 
   }
 }
