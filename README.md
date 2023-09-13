@@ -27,4 +27,5 @@
 | DataStructures 13 - Fizz Buzz Tree : Class 18 | [DataStructures 13 - Fizz Buzz Tree](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/FizzBuzzTree.md) |
 | DataStructures 14 - InsertionSort : Class 26 | [DataStructures 14 - InsertionSort](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/InsertionSort.md) |
 | DataStructures 15 - MergeSort : Class 27 | [DataStructures 15 - MergeSort](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/MergeSort.md) |
-| DataStructures 16 - Sorting-Comparisons : Class 26 | [DataStructures 16 - Sorting-Comparisons](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/SortingComparisons.md) |
+| DataStructures 16 - Sorting-Comparisons : Class 28 | [DataStructures 16 - Sorting-Comparisons](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/SortingComparisons.md) |
+| DataStructures 30 - Hash-Tables : Class 30 | [DataStructures 30 - Hash-Tables](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/HashTables.md) |
