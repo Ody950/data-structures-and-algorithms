@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HashtableLab
+namespace RepeatedWordLab
 {
   public class Hashtable
   {
@@ -113,6 +113,27 @@ namespace HashtableLab
         return false;
       }
       return false;
+    }
+
+
+    public string RepeatedWord(string paragraph)
+    {
+      string[] words = paragraph.Split(',', ' ', '-', '.');
+      for (int i = 0; i < words.Length; i++)
+      {
+        if (words[i] != "")
+        {
+          if (Contains(words[i].ToLower()))
+          {
+            return words[i];
+          }
+          else
+          {
+            Set(words[i].ToLower(), null);
+          }
+        }
+      }
+      return "no repeats";
     }
 
 
