@@ -32,3 +32,4 @@
 | DataStructures 31 - RepeatedWord : Class 31 | [DataStructures 31 - RepeatedWord](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/RepeatedWord.md) |
 | DataStructures 32 - TreeIntersection : Class 32 | [DataStructures 32 - TreeIntersection](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/TreeIntersection.md) |
 | DataStructures 33 - Left-Join : Class 33 | [DataStructures 33 - Left-Join](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Left-Join.md) |
+| DataStructures 34 - Graphs : Class 34 | [DataStructures 33 - Graphs](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Graph.md) |
