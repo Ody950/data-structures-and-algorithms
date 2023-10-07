@@ -33,6 +33,6 @@
 | DataStructures 32 - TreeIntersection : Class 32 | [DataStructures 32 - TreeIntersection](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/TreeIntersection.md) |
 | DataStructures 33 - Left-Join : Class 33 | [DataStructures 33 - Left-Join](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Left-Join.md) |
 | DataStructures 35 - Graphs : Class 35 | [DataStructures 35 - Graphs](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/TheGraph.md) |
-| DataStructures 36 - Graph-Breadth-First : Class 36 | [DataStructures 36 - Graphs](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Graph-Breadth-First.md) |
-| DataStructures 37 - Graph-Business-Trip : Class 37 | [DataStructures 37 - Graphs](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Graph-Business-Trip.md) |
-| DataStructures 38 - Graph-Depth-First : Class 38 | [DataStructures 38 - Graphs](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Graph-Depth-First.md) |
+| DataStructures 36 - Graph-Breadth-First : Class 36 | [DataStructures 36 - Graph-Breadth-First](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Graph-Breadth-First.md) |
+| DataStructures 37 - Graph-Business-Trip : Class 37 | [DataStructures 37 - Graph-Business-Trip](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Graph-Business-Trip.md) |
+| DataStructures 38 - Graph-Depth-First : Class 38 | [DataStructures 38 - Graph-Depth-First](https://github.com/Ody950/data-structures-and-algorithms/blob/main/README-DataStructures/Graph-Depth-First.md) |
